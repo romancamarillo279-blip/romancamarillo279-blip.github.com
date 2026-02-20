@@ -1,10 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Title</title>
-    </head>
-    <body>
-    
-    </body>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Triángulo de Pascal</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        margin: 3px 0;
+    }
+
+    .cell {
+        width: 40px;
+        height: 28px;
+        border: 1px solid #444;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        font-weight: bold;
+        color: #222;
+    }
+
+    /* Colores aproximados del gradiente */
+    .green { background-color: #76c47f; }
+    .lightgreen { background-color: #a9d68f; }
+    .yellow { background-color: #f1e589; }
+    .orange { background-color: #f3b36b; }
+    .red { background-color: #e57373; }
+</style>
+</head>
+<body>
+
+<h2>Triángulo de Pascal</h2>
+
+<!-- FILA 1 -->
+<div class="row">
+    <div class="cell green">1</div>
+</div>
+
+<!-- FILA 2 -->
+<div class="row">
+    <div class="cell green">1</div>
+    <div class="cell green">1</div>
+</div>
+
+<!-- FILA 3 -->
+<div class="row">
+    <div class="cell green">1</div>
+    <div class="cell green">2</div>
+    <div class="cell green">1</div>
+</div>
+
+<!-- FILA 4 -->
+<div class="row">
+    <div class="cell green">1</div>
+    <div class="cell lightgreen">3</div>
+    <div class="cell lightgreen">3</div>
+    <div class="cell green">1</div>
+</div>
+
+<!-- FILA 5 -->
+<div class="row">
+    <div class="cell green">1</div>
+    <div class="cell lightgreen">4</div>
+    <div class="cell yellow">6</div>
+    <div class="cell lightgreen">4</div>
+    <div class="cell green">1</div>
+</div>
+
+<!-- FILA 6 -->
+<div class="row">
+    <div class="cell green">1</div>
+    <div class="cell lightgreen">5</div>
+    <div class="cell yellow">10</div>
+    <div class="cell yellow">10</div>
+    <div class="cell lightgreen">5</div>
+    <div class="cell green">1</div>
+</div>
+
+<!-- FILA 7 -->
+<div class="row">
+    <div class="cell green">1</div>
+    <div class="cell lightgreen">6</div>
+    <div class="cell yellow">15</div>
+    <div class="cell yellow">20</div>
+    <div class="cell yellow">15</div>
+    <div class="cell lightgreen">6</div>
+    <div class="cell green">1</div>
+</div>
+
+<!-- FILA 8 -->
+<div class="row">
+    <div class="cell green">1</div>
+    <div class="cell lightgreen">7</div>
+    <div class="cell yellow">21</div>
+    <div class="cell yellow">35</div>
+    <div class="cell yellow">35</div>
+    <div class="cell yellow">21</div>
+    <div class="cell lightgreen">7</div>
+    <div class="cell green">1</div>
+</div>
+
+<!-- FILA 9 -->
+<div class="row">
+    <div class="cell green">1</div>
+    <div class="cell lightgreen">8</div>
+    <div class="cell yellow">28</div>
+    <div class="cell yellow">56</div>
+    <div class="cell yellow">70</div>
+    <div class="cell yellow">56</div>
+    <div class="cell yellow">28</div>
+    <div class="cell lightgreen">8</div>
+    <div class="cell green">1</div>
+</div>
+
+<!-- FILA 10 -->
+<div class="row">
+    <div class="cell green">1</div>
+    <div class="cell lightgreen">9</div>
+    <div class="cell yellow">36</div>
+    <div class="cell yellow">84</div>
+    <div class="cell yellow">126</div>
+    <div class="cell yellow">126</div>
+    <div class="cell yellow">84</div>
+    <div class="cell yellow">36</div>
+    <div class="cell lightgreen">9</div>
+    <div class="cell green">1</div>
+</div>
+
+<!-- FILA 11 -->
+<div class="row">
+    <div class="cell green">1</div>
+    <div class="cell lightgreen">10</div>
+    <div class="cell yellow">45</div>
+    <div class="cell yellow">120</div>
+    <div class="cell yellow">210</div>
+    <div class="cell yellow">252</div>
+    <div class="cell yellow">210</div>
+    <div class="cell yellow">120</div>
+    <div class="cell yellow">45</div>
+    <div class="cell lightgreen">10</div>
+    <div class="cell green">1</div>
+</div>
+
+<!-- FILA 12 -->
+<div class="row">
+    <div class="cell green">1</div>
+    <div class="cell lightgreen">11</div>
+    <div class="cell yellow">55</div>
+    <div class="cell yellow">165</div>
+    <div class="cell yellow">330</div>
+    <div class="cell orange">462</div>
+    <div class="cell orange">462</div>
+    <div class="cell yellow">330</div>
+    <div class="cell yellow">165</div>
+    <div class="cell yellow">55</div>
+    <div class="cell lightgreen">11</div>
+    <div class="cell green">1</div>
+</div>
+
+<!-- FILA 13 -->
+<div class="row">
+    <div class="cell green">1</div>
+    <div class="cell lightgreen">12</div>
+    <div class="cell yellow">66</div>
+    <div class="cell yellow">220</div>
+    <div class="cell yellow">495</div>
+    <div class="cell orange">792</div>
+    <div class="cell red">924</div>
+    <div class="cell orange">792</div>
+    <div class="cell yellow">495</div>
+    <div class="cell yellow">220</div>
+    <div class="cell yellow">66</div>
+    <div class="cell lightgreen">12</div>
+    <div class="cell green">1</div>
+</div>
+
+</body>
 </html>
