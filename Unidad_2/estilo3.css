@@ -1,0 +1,21 @@
+table { border: 3px dashed crimson; width: 100%; 
+    border-collapse: collapse; cursor: pointer;
+}
+tr:nth-child(even) {background-color: lightgray; }
+td ,th { text-align: center; padding: 5px; }
+th { text-transform: uppercase; background-color: white}
+tr:hover { background-color: lightyellow}
+
+quicksand-500{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+quicksand-300, table{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
