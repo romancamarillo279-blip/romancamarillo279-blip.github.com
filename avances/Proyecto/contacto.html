@@ -1,125 +1,42 @@
-<!doctype html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contacto - Pokémon</title>
-
-    <link rel="icon" href="PokeLogo.png" />
-
-    <link href="bootstrap-5.3.8-examples/assets/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
-    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet" />
-    <link rel="stylesheet" href="cover.css" />
-
-    <style>
-
-        .pokemon-font {
-            font-family: 'Pokemon Solid', sans-serif;
-            color: #ffcb05;
-            text-shadow: -1px -1px 0 #3b4cca, 1px -1px 0 #3b4cca, -1px 1px 0 #3b4cca, 1px 1px 0 #3b4cca;
-            letter-spacing: 2px;
-        }
-
-        .card-portada {
-            background: rgba(0, 0, 0, 0.75); 
-            border: 3px solid #ffcb05;
-            border-radius: 15px;
-            padding: 40px;
-            box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
-            max-width: 600px; 
-            margin: 50px auto;
-        }
-
-        .form-label {
-            color: #ffcb05;
-            font-family: 'Pokemon Solid', sans-serif;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-        }
-
-        .form-control {
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 1px solid #3b4cca;
-            color: white;
-        }
-
-        .form-control:focus {
-            background-color: rgba(255, 255, 255, 0.2);
-            border-color: #ffcb05;
-            color: white;
-            box-shadow: 0 0 10px rgba(255, 203, 5, 0.5);
-        }
-
-        .btn-pokemon {
-            background-color: #3b4cca;
-            border: 2px solid #ffcb05;
-            color: white;
-            font-family: 'Pokemon Solid', sans-serif;
-            letter-spacing: 1px;
-            transition: 0.3s;
-        }
-
-        .btn-pokemon:hover {
-            background-color: #ffcb05;
-            color: #3b4cca;
-            transform: scale(1.05);
-        }
-
-        ::placeholder {
-            color: rgba(255, 255, 255, 0.5) !important;
-        }
-    </style>
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-        <div class="container">
-            <a class="navbar-brand pokemon-font" href="principal.html">Pokémon</a>
-            <div class="collapse navbar-collapse justify-content-end">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="contenido/index.html">Contenido</a></li>
-                    <li class="nav-item"><a class="nav-link" href="referencias.html">Referencias</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
-                </ul>
+<div class="overlay">
+    <div class="card mb-3 mx-auto" style="max-width: 850px; background-color: rgba(0,0,0,0.75); border: 3px solid #ffcb05; border-radius: 15px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                IMG/PokePrincipal.gif
             </div>
-        </div>
-    </nav>
+            <div class="col-md-8">
+                <div class="card-body text-white">
 
-    <div class="overlay">
-        <div class="card-portada">
-            <h2 class="text-center mb-4 pokemon-font" style="font-size: 2.5rem;">¡Contáctanos!</h2>
-            
-            <form>
-                <div class="mb-3">
-                    <label class="form-label">Nombre del Entrenador</label>
-                    <input type="text" class="form-control" placeholder="Escribe tu nombre">
-                </div>
-                
-                <div class="mb-3">
-                    <label class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" placeholder="tu@correo.com">
-                </div>
+                    <h2 class="pokemon-font mb-4" style="font-size: 2rem;">¡Contáctanos!</h2>
 
-                <div class="mb-3">
-                    <label class="form-label">Tu Mensaje</label>
-                    <textarea class="form-control" rows="4" placeholder="¿Qué tienes en mente?"></textarea>
-                </div>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Nombre del Entrenador</label>
+                            <input type="text" class="form-control" placeholder="Escribe tu nombre">
+                        </div>
 
-                <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-pokemon p-2">Enviar a la PC de Bill</button>
-                </div>
-            </form>
+                        <div class="mb-3">
+                            <label class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" placeholder="tu@correo.com">
+                        </div>
 
-            <div class="redes mt-4 text-center">
-                <i class="fa fa-facebook mx-2"></i>
-                <i class="fa fa-instagram mx-2"></i>
-                <i class="fa fa-twitter mx-2"></i>
-                <i class="fa fa-youtube mx-2"></i>
+                        <div class="mb-3">
+                            <label class="form-label">Tu Mensaje</label>
+                            <textarea class="form-control" rows="4" placeholder="¿Qué tienes en mente?"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-pokemon w-100 p-2">Enviar a la PC de Bill</button>
+                    </form>
+
+                    <div class="redes mt-4 text-center">
+                        <i class="fa fa-facebook mx-2"></i>
+                        <i class="fa fa-instagram mx-2"></i>
+                        <i class="fa fa-twitter mx-2"></i>
+                        <i class="fa fa-youtube mx-2"></i>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
-
-    <script src="bootstrap-5.3.8-examples/assets/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+</div>
