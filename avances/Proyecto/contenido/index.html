@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es" data-bs-theme="auto">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contenido Pokémon</title>
+
+    <link href="../bootstrap-5.3.8-examples/assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="carousel.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+
+    <style>
+        .pokemon-font {
+            font-family: 'Pokemon Solid', sans-serif;
+            color: #ffcb05;
+            text-shadow: -2px -2px 0 #3b4cca, 2px -2px 0 #3b4cca, -2px 2px 0 #3b4cca, 2px 2px 0 #3b4cca, 4px 4px 0 #2a3990;
+            letter-spacing: 2px;
+        }
+        .navbar-brand.pokemon-font {
+            font-size: 1.5rem;
+            text-shadow: -1px -1px 0 #3b4cca, 1px -1px 0 #3b4cca, -1px 1px 0 #3b4cca, 1px 1px 0 #3b4cca;
+        }
+    </style>
+</head>
+<body>
+
+    <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand pokemon-font" href="../index.html">Pokémon</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Contenido</a></li>
+              <li class="nav-item"><a class="nav-link" href="../referencias.html">Referencias</a></li>
+              <li class="nav-item"><a class="nav-link" href="../contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="background-color: #777;">
+            <img src="../IMG/PokeAnime.gif" class="d-block w-100" style="height: 32rem; object-fit: cover; filter: brightness(0.5);" alt="Anime">
+              <div class="container">
+                  <div class="carousel-caption text-start">
+                      <h1 class="pokemon-font">Anime</h1>
+                      <p>Donde comenzó el viaje de Ash...</p>
+                      <p><a class="btn btn-lg btn-primary" href="#">Ver episodios</a></p>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item" style="height: 32rem; background: #444;">
+            <img src="../IMG/PokePrincipal.gif" class="d-block w-100" style="height: 32rem; object-fit: cover; filter: brightness(0.5);" alt="Juegos">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1 class="pokemon-font">Juegos Principales</h1>
+                <p>Domina los combates y conviértete en el Campeón de la Liga Pokémon.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Conoce los juegos</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="height: 32rem; background: #222;">
+            <img src="../IMG/Spinoff.gif" class="d-block w-100" style="height: 32rem; object-fit: cover; filter: brightness(0.5);" alt="Spin Off">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1 class="pokemon-font">Spin Off</h1>
+                <p>Si buscas más aventuras Pokémon revisa aquí</p>
+                <p><a class="btn btn-lg btn-warning" href="#">Explora más Juegos</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <div class="container marketing">
+        <div class="row text-center">
+          <div class="col-lg-4">
+            <img src="../IMG/IconoAnime.jpg" class="rounded-circle" width="140" height="140" alt="Anime">
+            <h2 class="fw-normal">Anime</h2>
+            <p>Viajes y aventuras nuevas cada día con Ash y sus amigos.</p>
+            <p><a class="btn btn-secondary" href="#">Ver más</a></p>
+          </div>
+          <div class="col-lg-4">
+            <img src="../IMG/IconoPrincipales.jpg" class="rounded-circle" width="140" height="140" alt="Principales">
+            <h2 class="fw-normal">Juegos</h2>
+            <p>9 Generaciones para explorar y más de 1000 Pokémon.</p>
+            <p><a class="btn btn-secondary" href="#">Lánzate</a></p>
+          </div>
+          <div class="col-lg-4">
+            <img src="../IMG/IconoSpinoff.jpg" class="rounded-circle" width="140" height="140" alt="Spinoff">
+            <h2 class="fw-normal">Spin offs</h2>
+            <p>¿Buscas nuevas aventuras? Estás en el lugar correcto.</p>
+            <p><a class="btn btn-secondary" href="#">Descubre</a></p>
+          </div>
+        </div>
+
+        <footer class="container">
+          <p class="float-end"><a href="#">Volver arriba</a></p>
+          <p>&copy; 2026 Proyecto Pokémon &middot;</p>
+        </footer>
+      </div>
+    </main>
+
+    <script src="../bootstrap-5.3.8-examples/assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

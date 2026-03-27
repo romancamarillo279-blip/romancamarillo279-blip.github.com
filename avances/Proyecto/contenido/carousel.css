@@ -1,0 +1,66 @@
+/* Estilos necesarios para que el Carousel funcione */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem; /* Esto le da la altura a las diapositivas */
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+.container-fluid{
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+.navbar-brand{
+    color: #FFCB05;
+  text-shadow: 3px 3px #2a75bb;
+}
+
+
+  .pokemon-font {
+    font-family: 'Pokemon Solid', sans-serif;
+    color: #ffcb05; 
+    letter-spacing: 4px;
+    text-shadow: 
+      -2px -2px 0 #3b4cca,  
+       2px -2px 0 #3b4cca,
+      -2px  2px 0 #3b4cca,
+       2px  2px 0 #3b4cca,
+       4px  4px 0 #2a3990; /
+  }
+
+  .navbar-brand {
+    font-family: 'Pokemon Solid', sans-serif;
+    color: #ffcb05 !important;
+    text-shadow: -1px -1px 0 #3b4cca, 1px -1px 0 #3b4cca, -1px 1px 0 #3b4cca, 1px 1px 0 #3b4cca;
+  }
+
