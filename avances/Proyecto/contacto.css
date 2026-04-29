@@ -1,0 +1,14 @@
+.card.mb-3.mx-auto {
+    overflow: hidden; 
+    display: flex;
+    align-items: stretch;
+}
+
+.card.mb-3.mx-auto .row {
+    width: 100%;
+}
+
+.card.mb-3.mx-auto img {
+    height: 100% !important;
+    object-fit: cover; 
+}
