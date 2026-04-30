@@ -1,45 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<title>Widget</title>
+    <meta charset="UTF-8">
+    <title>Widget Champions League</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.4;
+            max-width: 400px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        details {
+            margin-bottom: 15px;
+        }
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            list-style: none; 
+        }
+        summary::before {
+            content: "▼ ";
+            font-size: 10px;
+            vertical-align: middle;
+        }
+        details[open] summary::before {
+            content: "▼ "; 
+        }
+        .content {
+            padding-left: 15px;
+            margin-top: 10px;
+        }
+        .match-info {
+            margin-top: 5px;
+        }
+        .flag {
+            width: 20px;
+            vertical-align: middle;
+        }
+    </style>
 </head>
 <body>
-    Etiquetas para listas de tipo widget
-<br>
-<br>
-<br>
-<h2>
-        Lorem ipsum
-</h2>
-<details>
-<summary>
-            1
-</summary>
-<p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales lacus a lorem scelerisque venenatis. Nullam at leo sed turpis imperdiet tristique sit amet in arcu. Nulla egestas tincidunt sodales. Sed vestibulum libero ut magna vehicula, congue egestas felis tempor. Fusce efficitur pretium felis, eget iaculis lorem pellentesque ut. Sed pellentesque ornare nunc, in ultricies tellus consequat quis. Nunc vel ante lectus.
-</p>
-</details>
-<h2>
-        Suspendisse faucibus
-</h2>
-<details>
-<summary >
-            2
-</summary>
-<p>
-        Suspendisse faucibus eget velit eu faucibus. Pellentesque vel nibh ante. Phasellus mattis, nisl dapibus semper tincidunt, tellus massa aliquam sapien, ac auctor mi ante eu diam. Aliquam placerat varius tellus, a mattis nisi fermentum viverra. Phasellus nec turpis quis libero suscipit euismod. Praesent eget varius sem, at blandit libero. Cras hendrerit rhoncus massa, vitae lacinia enim convallis vitae. Etiam cursus luctus quam, id mollis ante eleifend ac. Donec lobortis, leo vitae pretium sollicitudin, felis nulla lacinia tortor, id tristique risus metus sed leo.
-</p>
-</details>
-<h2>
-        Suspendisse id placerat arcu
-</h2>
-<details>
-<summary>
-                3
-</summary>
-<p>
-              Suspendisse id placerat arcu, eget lacinia mi. Phasellus vehicula, sapien ac dignissim fringilla, velit felis viverra ipsum, eget dictum tellus ipsum vel velit. Vestibulum convallis placerat ullamcorper. Praesent eu fermentum elit. In semper ultrices dui, vulputate placerat libero. Nulla facilisi. Quisque imperdiet nisl a orci rhoncus eleifend. Sed sed eros eros. Aenean ultricies porta posuere. Mauris non hendrerit lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-</p>
-</details>
+    Etiqueta para listas tipo widget
+    <h1>UEFA Champions League</h1>
+    <details open>
+        <summary>2024-25</summary>
+        <div class="content">
+            Allianz Arena, Múnich, Alemania 🇩🇪 <img src="https://flagcdn.com/w20/de.png" alt="Alemania" style="vertical-align: middle; margin-right: 5px;">
+            <div class="match-info">
+                <details>
+                    <summary><img src="https://flagcdn.com/w20/fr.png" alt="Francia" style="vertical-align: middle; margin-right: 5px;">🇫🇷 Paris Saint-Germain (5)</summary>
+                </details>
+                vs.<br>
+                <details>
+                    <summary><img src="https://flagcdn.com/w20/it.png" alt="Italia" style="vertical-align: middle; margin-right: 5px;">🇮🇹 Inter de Milán (0)</summary>
+                </details>
+            </div>
+        </div>
+    </details>
+    <details>
+        <summary>2023-24</summary>
+        <div class="content">
+            Estadio de Wembley, Londres, Inglaterra<br>
+            <strong>Real Madrid 2—0 Borussia Dortmund</strong>
+        </div>
+    </details>
+    <details>
+        <summary>2022-23</summary>
+        <div class="content">
+            Estadio Olímpico Atatürk, Estambul, Turquía<br>
+            <strong>Manchester City 1—0 Inter de Milán</strong>
+        </div>
+    </details>
+    <details>
+        <summary>2021-22</summary>
+        <div class="content">
+            Estadio de Francia, Saint-Denis, Francia<br>
+            <strong>Real Madrid 1—0 Liverpool</strong>
+        </div>
+    </details>
+    <details>
+        <summary>2020-21</summary>
+        <div class="content">
+            Estadio do Dragão, Oporto, Portugal<br>
+            <strong>Chelsea 1—0 Manchester City</strong>
+        </div>
+    </details>
+
 </body>
 </html>
+
