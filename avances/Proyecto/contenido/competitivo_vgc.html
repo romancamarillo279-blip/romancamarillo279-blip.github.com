@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Línea Principal - Todas las Generaciones</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="../bootstrap-5.3.8-examples/assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="carousel.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css" />
+        <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet" />
+        <style>
+            .pokemon-font {
+                font-family: "Pokemon Solid", sans-serif;
+                color: #ffcb05;
+                text-shadow:
+                    -2px -2px 0 #3b4cca,
+                    2px -2px 0 #3b4cca,
+                    -2px 2px 0 #3b4cca,
+                    2px 2px 0 #3b4cca;
+                letter-spacing: 2px;
+            }
+            .custom-navbar {
+                background-color: #b31d1d !important;
+                border-bottom: 3px solid #ffcb05;
+            }
+            /* Ajuste para que el carousel no quede escondido bajo el menú fijo */
+            body {
+                padding-top: 3rem;
+            }
+
+            .social-card {
+                transition: transform 0.3s;
+                border: none;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            }
+            .social-card:hover {
+                transform: scale(1.03);
+            }
+            .social-img {
+                height: 200px;
+                object-fit: cover;
+            }
+            body {
+                background-color: #ffffff;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                color: #202122; /* Color de texto estilo Wikipedia */
+            }
+
+            .navbar {
+                margin-bottom: 40px;
+            }
+
+            /* Contenedor de Generación estilo Wikipedia */
+            .gen-section {
+                background: #fff;
+                border: 1px solid #a2a9b1; /* Borde sutil de Wiki */
+                padding: 25px;
+                margin-bottom: 40px;
+                border-radius: 2px;
+                transition: border-color 0.3s;
+            }
+
+            .gen-section:hover {
+                border-color: #3366cc; /* Azul de enlace */
+            }
+
+            .gen-title {
+                border-bottom: 1px solid #a2a9b1;
+                margin-bottom: 20px;
+                padding-bottom: 5px;
+                font-family: "Linux Libertine", "Georgia", "Times", serif;
+                font-weight: normal;
+            }
+
+            .gen-img {
+                width: 100%;
+                max-width: 450px;
+                height: auto;
+                border: 1px solid #c8ccd1;
+                padding: 3px;
+                background-color: #fff;
+            }
+
+            .gen-text {
+                line-height: 1.6;
+                font-size: 1.05rem;
+                text-align: justify;
+            }
+
+            .game-info {
+                background-color: #f8f9fa;
+                border: 1px solid #eaecf0;
+                padding: 10px 15px;
+                margin-bottom: 15px;
+                font-style: italic;
+            }
+
+            footer {
+                border-top: 1px solid #a2a9b1;
+                color: #54595d;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand pokemon-font" href="../index.html">Pokémon</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Contenido</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle text-white"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                >Videojuegos</a
+                            >
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="linea_principal.html">Línea Principal</a></li>
+                                <li><a class="dropdown-item" href="spin_offs.html">Spin-offs</a></li>
+                                <li><a class="dropdown-item" href="pokemon_go.html">Pokémon GO</a></li>
+                                <li><a class="dropdown-item" href="competitivo_vgc.html">Competitivo VGC</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle text-white"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                >Anime</a
+                            >
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="https://www.pokemon.com/el/dibujos-animados/horizontes/1"
+                                        target="_blank"
+                                        >Serie Horizontes</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="https://www.pokemon.com/es/episodios-pokemon/peliculas-pokemon/"
+                                        target="_blank"
+                                        >Películas</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="https://www.pokemon.com/el/dibujos-animados/temporadas"
+                                        target="_blank"
+                                        >Especiales Web</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../referencias.html">Referencias</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white" href="../contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <header class="mb-5">
+                <h1 class="display-5 fw-bold">Videojuegos: Competitivo VGC</h1>
+                <p class="lead text-muted">Video Game Championships</p>
+                <hr />
+            </header>
+
+            <section class="gen-section">
+                <div class="row align-items-start">
+                    <div class="col-lg-5 mb-3 mb-lg-0 text-center">
+                        <img
+                            src="data:image/jpeg;base64,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"
+                            class="gen-img shadow-sm"
+                            alt="Gen 1" />
+                    </div>
+                    <div class="col-lg-7">
+                        <h2 class="gen-title text-danger">Competitivo de Pokémon</h2>
+                        <div class="game-info">Casi todos Los formatos</div>
+                        <div class="gen-text">
+                            <p>
+                                El competitivo en Pokémon, por lo general, se refiere a los combates jugador contra
+                                jugador que se llevan a cabo utilizando los videojuegos de Pokémon. Los jugadores arman
+                                un equipo de Pokémon, el cual debe definirse según un conjunto de reglas concreto, y
+                                combaten de la forma en la que lo harían en el juego, o sea, hasta que todos los Pokémon
+                                en el equipo de un jugador se hayan debilitado, o también hasta que un jugador se rinda.
+                                Se suele realizar estos combates a través de las consolas de los respectivos juegos (por
+                                ejemplo, la Nintendo 3DS o la Nintendo Switch) o en línea, a través de simuladores
+                                creados por los fans, tales como Pokémon Showdown!.
+                            </p>
+                            <p>
+                                El circuito de campeonatos oficiales para el competitivo de Pokémon se conoce como
+                                Campeonato de Videojuegos (VGC, por sus siglas en inglés). The Pokémon Company
+                                International lo estableción en el 2009 bajo su programa Play! Pokémon. Jugadores de
+                                todo el mundo compiten en torneos locales y eliminatorias para ganar premios de dinero
+                                en efectivo y becas, así como una invitación al Campeonato Mundial de Videojuegos
+                                Pokémon anual; un torneo de esports en el que solo se puede participar con una
+                                invitación y que, además de los videojuegos de Pokémon, también incluye al juego de
+                                cartas coleccionables Pokémon y a Pokkén Tournament.Todas las partidas del VGC se
+                                juegan con el formato de «combate doble», en los que dos Pokémon del equipo de un
+                                jugador combaten contra otros dos Pokémon del oponente a la vez. Además, las reglas
+                                suelen cambiar cada año para tomar en cuenta los lanzamientos de los juegos nuevos, por
+                                lo que, por ejemplo, el Campeonato Mundial de Pokémon del 2022 se jugó en Pokémon Espada
+                                y Escudo.
+                            </p>
+                            <p>
+                                Por el contrario, el conjunto de fans más grande de la comunidad angloparlante dedicada
+                                al competitivo es Smogon University, el cual posee su propio conjunto de formatos
+                                competitivos y alberga torneos no oficiales para sus propios jugadores. Generalmente,
+                                los fans son quienes implusan los formatos competitivos y la comunidad es quien los
+                                establece, prohibiendo las estrategias y los Pokémon que consideran demasiado poderosos,
+                                a través del consenso y de la votación popular, y colocando a los Pokémon en tiers
+                                según la frecuencia con la que los utilizan en los combates, lo que permite que
+                                los Pokémon más débiles sean utilizados exitosamente en los formatos que corresponden a
+                                las tiers más bajas. A diferencia de los torneos oficiales, estos torneos permiten a los
+                                jugadores tener la opción de escoger cualquier formato en el que deseen jugar y utilizar
+                                a cualquier Pokémon que esté en la misma tier escogida o en alguna más baja.
+                            </p>
+                            <h2>Caracteristicas de los Pokémon</h2>
+                            <p>
+                                Antes de la cuarta generación, la categoría de daño de un movimiento (o sea, físico o
+                                especial) la determinaba el tipo del mismo movimiento (por ejemplo, todos los
+                                movimientos de tipo roca eran físicos y todos los movimientos de tipo dragón eran
+                                especiales). La separación de las categorías especial y física en la cuarta generación
+                                permitió que los movimientos puedan ser físicos o especiales según la naturaleza del
+                                ataque en lugar del tipo del movimiento. Este cambio fue enorme para los combates
+                                competitivos y afectó positivamente a algunos Pokémon como Gengar o Gyarados y
+                                negativamente a otros como Alakazam. Debido a que los combates competitivos involucran a
+                                jugadores humanos, el estilo de combate es muy diferente, ya que los jugadores escogen
+                                su conjunto de cuatro movimientos y un objeto basándose no solo en las características
+                                de sus Pokémon, sino también en los conjuntos que los otros jugadores podrían usar para
+                                contrarrestarles.
+                            </p>
+                            <p>
+                                Todos los Pokémon tienen una naturaleza, la cual tiene el potencial de aumentar una
+                                característica en un 10% y disminuir otra en el mismo porcentaje, con respecto a una
+                                cantidad base. Además, unos atributos escondidos, llamados EV e IV, suelen alterar las
+                                características en los Pokémon competitivos, normalmente llevándolas al máximo. Los EV
+                                se obtienen al combatir y derrotar a otro Pokémon (cada Pokémon tiene un conjunto
+                                concreto de EV que otorga), mientras que los IV los asigna el juego cuando obtienes un
+                                Pokémon (mientras más alto se este número, mejor se vuelve la característica con
+                                respecto a una cantidad mínima fija).
+                            </p>
+                            <h2>Movimientos</h2>
+                            <p>
+                                Los movimientos que tienen una potencia base alta, pero que también tienen una
+                                desventaja enorme, como el turno de recarga de gigaimpacto y la precisión arriesgada de
+                                trueno, no siempre son viables en el competitivo. En cambio, los movimientos que tienen
+                                una precisión fiable, desventajas mínimas y una potencia base decente, como golpe cuerpo
+                                y rayo, respectivamente, se utilizan más. La introducción de las megaevoluciones les dio
+                                a Pokémon que anteriormente no eran viables o no lo eran tanto, como Charizard y Mawile,
+                                un propósito en las tier superiores del meta, sin embargo, esta mecánica (introducida en
+                                la sexta generación), junto con los movimientos Z (una mecánica que debutó en la séptima
+                                generación y que consiste en movimientos ultrapoderosos de un tipo en particular que
+                                cualquier Pokémon equipado con un objeto específico los podía realizar) fue removida en
+                                la octava generación. Dinamax fue una mecánica nueva introducida en esta última
+                                generación; consiste en que, una vez por combate, cada jugador puede aumentar los PS de
+                                uno de sus Pokémon (en hasta un 100%) y mejorar sus movimientos a movimientos Dinamax
+                                (estos son movimientos poderosos con efectos adicionales y que se basan en el tipo del
+                                movimiento). Algunos jugadores, especialmente los seguidores de Smogon University,
+                                criticaron esta mecánica y prohibieron su uso en algunos formatos. Ciertos tipos en las
+                                primeras ediciones de los juegos, como el tipo psíquico en la primera generación y el
+                                tipo dragón en la cuarta y en la quinta, eran excepcionalmente poderosos y una clara
+                                elección por sobre el resto, debido a su carencia de debilidades o porque solo un tipo
+                                los resistiera. Al tipo psíquico solo lo resistía él mismo y al tipo dragón solo lo
+                                resistía el tipo acero. Los diferentes tipos son más equilibrados en los metas actuales,
+                                a pesar de que ciertos tipos son mejores en algunas circunstancias (como el tipo hielo
+                                para la ofensiva y el tipo acero para la defensiva). Además, debido a
+                                que, en la primera generación, el ataque especial y la defensa especial no estaban
+                                separados como ahora, existiendo estos como una única característica conocida como
+                                especial, los Pokémon con un especial alto podían causar y resistir daño especial
+                                extremadamente bien (o, si tenían un especial bajo, eran extremadamente débiles tanto en
+                                la ofensiva como en la defensiva especiales).
+                            </p>
+                            <h2></h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="text-center py-5 mt-5 bg-light">
+            <div class="container">
+                <p>&copy; 2026 Proyecto Centro Pokémon - Universidad Politécnica SLP</p>
+                <p class="small text-muted">Contenido en base a &copy;ThePokemonCompany.</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

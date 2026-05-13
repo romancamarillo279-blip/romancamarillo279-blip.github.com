@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Línea Principal - Todas las Generaciones</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="../bootstrap-5.3.8-examples/assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="carousel.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css" />
+        <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet" />
+        <style>
+            .pokemon-font {
+                font-family: "Pokemon Solid", sans-serif;
+                color: #ffcb05;
+                text-shadow:
+                    -2px -2px 0 #3b4cca,
+                    2px -2px 0 #3b4cca,
+                    -2px 2px 0 #3b4cca,
+                    2px 2px 0 #3b4cca;
+                letter-spacing: 2px;
+            }
+            .custom-navbar {
+                background-color: #b31d1d !important;
+                border-bottom: 3px solid #ffcb05;
+            }
+            /* Ajuste para que el carousel no quede escondido bajo el menú fijo */
+            body {
+                padding-top: 3rem;
+            }
+
+            .social-card {
+                transition: transform 0.3s;
+                border: none;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            }
+            .social-card:hover {
+                transform: scale(1.03);
+            }
+            .social-img {
+                height: 200px;
+                object-fit: cover;
+            }
+            body {
+                background-color: #ffffff;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                color: #202122; /* Color de texto estilo Wikipedia */
+            }
+
+            .navbar {
+                margin-bottom: 40px;
+            }
+
+            /* Contenedor de Generación estilo Wikipedia */
+            .gen-section {
+                background: #fff;
+                border: 1px solid #a2a9b1; /* Borde sutil de Wiki */
+                padding: 25px;
+                margin-bottom: 40px;
+                border-radius: 2px;
+                transition: border-color 0.3s;
+            }
+
+            .gen-section:hover {
+                border-color: #3366cc; /* Azul de enlace */
+            }
+
+            .gen-title {
+                border-bottom: 1px solid #a2a9b1;
+                margin-bottom: 20px;
+                padding-bottom: 5px;
+                font-family: "Linux Libertine", "Georgia", "Times", serif;
+                font-weight: normal;
+            }
+
+            .gen-img {
+                width: 100%;
+                max-width: 450px;
+                height: auto;
+                border: 1px solid #c8ccd1;
+                padding: 3px;
+                background-color: #fff;
+            }
+
+            .gen-text {
+                line-height: 1.6;
+                font-size: 1.05rem;
+                text-align: justify;
+            }
+
+            .game-info {
+                background-color: #f8f9fa;
+                border: 1px solid #eaecf0;
+                padding: 10px 15px;
+                margin-bottom: 15px;
+                font-style: italic;
+            }
+
+            footer {
+                border-top: 1px solid #a2a9b1;
+                color: #54595d;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand pokemon-font" href="../index.html">Pokémon</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Contenido</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle text-white"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                >Videojuegos</a
+                            >
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="linea_principal.html">Línea Principal</a></li>
+                                <li><a class="dropdown-item" href="spin_offs.html">Spin-offs</a></li>
+                                <li><a class="dropdown-item" href="pokemon_go.html">Pokémon GO</a></li>
+                                <li><a class="dropdown-item" href="competitivo_vgc.html">Competitivo VGC</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle text-white"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                >Anime</a
+                            >
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="https://www.pokemon.com/el/dibujos-animados/horizontes/1"
+                                        target="_blank"
+                                        >Serie Horizontes</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="https://www.pokemon.com/es/episodios-pokemon/peliculas-pokemon/"
+                                        target="_blank"
+                                        >Películas</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="https://www.pokemon.com/el/dibujos-animados/temporadas"
+                                        target="_blank"
+                                        >Especiales Web</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../referencias.html">Referencias</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white" href="../contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <header class="mb-5">
+                <h1 class="display-5 fw-bold">Pokemon GO</h1>
+                <p class="lead text-muted">El juego que movio el internet</p>
+                <hr />
+            </header>
+
+            <section class="gen-section">
+                <div class="row align-items-start">
+                    <div class="col-lg-5 mb-3 mb-lg-0 text-center">
+                        <img
+                            src="data:image/jpeg;base64,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"
+                            class="gen-img shadow-sm"
+                            alt="Gen 1" />
+                    </div>
+                    <div class="col-lg-7">
+                        <h2 class="gen-title text-danger">Acerca de</h2>
+                        <div class="game-info">Disponible solo en mobiles</div>
+                        <div class="gen-text">
+                            <p>
+                                Pokémon GO es un videojuego de realidad aumentada basado en la ubicación desarrollado
+                                por Niantic y recientemente adquirido por Scopely, y este ha sido publicado por The
+                                Pokémon Company para dispositivos iOS y Android. Es un videojuego gratuito pero contiene
+                                microtransacciones.El juego consiste en buscar y capturar personajes de la saga Pokémon
+                                que aparecen en ubicaciones del mundo real y luchar con ellos enfrentándose a personas
+                                reales o contra bots, lo que implica desplazarse físicamente por las calles de la ciudad
+                                para progresar. La aplicación comporta un elemento de interacción social, ya que
+                                promueve reuniones físicas de los usuarios en distintas ubicaciones de sus poblaciones y
+                                bosques, entre otros.
+                            </p>
+                            <h2>Modo de Juego</h2>
+                            <p>
+                                El videojuego requiere que el jugador recorra las calles de su ciudad para descubrir
+                                toda clase de pokémon, cuyas distintas especies aparecen dependiendo de la zona visitada
+                                y del clima de la zona. Las calles del mundo real aparecen representadas en Pokémon GO
+                                en forma de mapa, que muestra el lugar donde se encuentra el jugador. Además, los mapas
+                                de Pokémon GO integran diferentes Poképaradas que permiten conocer museos, instalaciones
+                                artísticas, monumentos y lugares históricos, etc.
+                            </p>
+                            <p>
+                                Utiliza la realidad aumentada y de acuerdo con el concepto original, los entrenadores
+                                podrán capturar pokémon hasta completar una colección. Otro objetivo es adiestrarlos
+                                para que ganen batallas frente a otros Pokémon. Haciendo uso del GPS del teléfono, la
+                                app le avisará con una vibración y una luz intermitente cuando el usuario se encuentre
+                                cerca de un Pokémon.También hace uso de monedas llamadas pokemonedas, las cuales pueden
+                                ser intercambiadas por elementos cosméticos y de utilidad.
+                            </p>
+                            <p>
+                                Cuando el jugador o entrenador Pokémon enciende la cámara de su teléfono, se puede
+                                encontrar con una imagen virtual de un Pokémon, superpuesta sobre la escena real tras la
+                                lente. Para capturar las criaturas, se utilizan pokéballs. Esta es una de las
+                                características por la que se considera que el juego se basa en la realidad aumentada,
+                                ya que permite ver la realidad mezclada con elementos de ficción a través de un teléfono
+                                inteligente.
+                            </p>
+                            <p>
+                                Por lo general, los gimnasios de pokémon se encuentran en lugares accesibles para los
+                                jugadores de Pokémon GO.
+                            </p>
+                            <h2>Mecánica</h2>
+                            <p>
+                                En la pantalla principal se muestra el mapa del lugar donde se encuentre el jugador, en
+                                donde se pueden distinguir calles, plazas y espejos de agua, el lugar en donde se
+                                encuentra el jugador es representado por un avatar, el cual puede ser masculino o
+                                femenino, personalizable en el menú perfil de usuario, acompañado por el pokémon
+                                asignado como compañero si se lo alimentó previamente (3 veces). También aparecerán las
+                                Poképaradas y Gimnasios cercanos, y diversos pokémon salvajes que pueden ser capturados.
+                            </p>
+                            <p>Además hay 5 menús:</p>
+                            <ul>
+                                <li>
+                                    El Menú de perfil de usuario, en donde estarán los logros y estadísticas, la lista
+                                    de amigos (con los que se puede intercambiar pokémon, enviar y recibir regalos, o
+                                    combatir) y la posibilidad de personalizar el avatar.Junto al menú de perfil aparece
+                                    el menú de compañero, el cual permitirá asignar un pokémon compañero, ver sus
+                                    estadísticas y alimentarlo y cuidarlo para ganar amistad y lograr mayor cantidad de
+                                    caramelos o megaenergía cuando se camine junto a él.
+                                </li>
+                                <li>
+                                    El menú central el cual se divide en:
+                                    <ul>
+                                        <li>
+                                            Pokédex: En donde se registran los pokémon avistados y capturados, con
+                                            descripciones de cada uno.
+                                        </li>
+                                        <li>
+                                            Pokémon: En donde se encuentran todos los pokémon capturados, en donde se
+                                            pueden consultar sus estadísticas, modificar sus ataques y nivel,
+                                            evolucionarlos o megaevolucionarlos, o transferirlos al laboratorio (sin
+                                            posibilidad de hacerlos regresar). Además en otro apartado, se encuentran
+                                            los huevos pokémon acumulados, los cuales pueden ser incubados, eclosionando
+                                            a medida de la distancia caminada.
+                                        </li>
+                                        <li>
+                                            Tienda: en donde con las pokémonedas se pueden conseguir los diferentes
+                                            ítems del juego, elementos para personalizar el avatar, o comprar
+                                            pokemonedas con dinero real.
+                                        </li>
+                                        <li>
+                                            Bolsa: en donde se alojan los ítems recolectados o comprados hasta su uso.
+                                        </li>
+                                        <li>
+                                            Combatir: Aquí se puede luchar contra otros usuarios en tres ligas
+                                            dependiendo de los PC (puntos de combate) de cada Pokémon (sub 1500, sub
+                                            2500 o sin límite), además de participar en ligas especiales de eventos.
+                                        </li>
+                                        <li>Noticias y configuración del juego.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    El menú de proximidad, el cual indica que pokémon hay en cercanías del usuario y las
+                                    incursiones más cercanas. En caso de que el pokémon cercano aun no haya sido
+                                    avistado, solo se verá su silueta.
+                                </li>
+                                <li>
+                                    El menú de investigaciones, en donde se pueden ver tres tipos de investigaciones:
+                                    Diarias, Especiales y de Eventos. Las investigaciones se completan haciendo los
+                                    requisitos que estas pidan, dando como recompensa ítems y pokémon.
+                                </li>
+                                <li>
+                                    El menú de clima, el cual coincide con el clima en el mundo real, indicando que
+                                    tipos de pokémon se verán beneficiados.
+                                </li>
+                            </ul>
+                            <h2>Captura de Pokémon</h2>
+                            <p>
+                                Al tocar un pokémon salvaje, o ganar una incursión o duelo especial, se abrirá una
+                                pantalla en donde aparecerá el pokémon a atrapar haciéndole frente al usuario. Con un
+                                interruptor se puede activar la realidad aumentada o cambiar a la vista genérica, que
+                                siempre es una pradera.
+                            </p>
+                            <p>
+                                Frente al pokémon estará la pokéball o pokebola con la que se intentará atrapar al
+                                mismo, la cual puede ser la clásica roja y blanca, la super ball (blanca y azul con
+                                adornos rojos), la ultra ball o ultrabola (blanca y negra con adornos amarillos) o la
+                                honor ball u honorbola (totalmente blanca, la cual se usa para atrapar pokémon de
+                                incursiones o rescatados del Team Rocket).En el juego, tras misiones de alto calibre, se
+                                puede utilizar la master ball, que tiene una tasa de captura del 100% en todos los
+                                pokémon. La efectividad de captura aumenta usando super balls o ultra balls, siendo
+                                estas últimas las más efectivas. Para lanzar la Poké Ball, el usuario debe tocar y
+                                deslizar la misma hacia el pokémon, en forma recta o curva, siendo esta última más
+                                efectiva. Dependiendo de como se tire la Poké Ball/Pokébola, el lanzamiento puede ser
+                                normal, bueno, genial o excelente, el calificativo aumentara los puntos de experiencia
+                                del usuario. El pokémon puede escaparse de la Poké Ball/Pokébola dependiendo de la
+                                dificultad de captura, indicada con círculos de colores cuando se arroja la Poké
+                                Ball/Pokébola (el círculo verde indica captura fácil y mientras más rojizo más difícil
+                                será de capturar), e incluso, puede rechazar la Poké Ball con algún ataque, o bien,
+                                escaparse definitivamente de la captura huyendo de la pantalla.
+                            </p>
+                            <p>
+                                Para aumentar la efectividad, se le pueden dar bayas al pokémon: las bayas Frambu
+                                (normales y doradas), aumentan la afinidad del pokémon a la captura, las Latano o Látano
+                                hacen menos inquieto al pokémon, y las Pinia (normales y plateadas) duplican la cantidad
+                                de caramelos que se obtendrán con la captura). Solo se puede dar una baya a la vez y se
+                                arrojan en línea recta hacia el pokémon
+                            </p>
+                            <p>
+                                Si el compañero pokémon del usuario tiene la amistad aumentada, es capaz de devolver la
+                                Poké Ball que el pokémon a capturar devuelve.
+                            </p>
+                            <p>Tras ser capturado, el pokémon aparecerá en la lista de pokémon capturados.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="text-center py-5 mt-5 bg-light">
+            <div class="container">
+                <p>&copy; 2026 Proyecto Centro Pokémon - Universidad Politécnica SLP</p>
+                <p class="small text-muted">Contenido en base a &copy;ThePokemonCompany.</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

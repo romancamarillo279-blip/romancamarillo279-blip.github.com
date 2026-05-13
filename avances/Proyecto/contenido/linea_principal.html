@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Línea Principal - Todas las Generaciones</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="../bootstrap-5.3.8-examples/assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="carousel.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css" />
+        <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet" />
+        <style>
+            .pokemon-font {
+                font-family: "Pokemon Solid", sans-serif;
+                color: #ffcb05;
+                text-shadow:
+                    -2px -2px 0 #3b4cca,
+                    2px -2px 0 #3b4cca,
+                    -2px 2px 0 #3b4cca,
+                    2px 2px 0 #3b4cca;
+                letter-spacing: 2px;
+            }
+            .custom-navbar {
+                background-color: #b31d1d !important;
+                border-bottom: 3px solid #ffcb05;
+            }
+            /* Ajuste para que el carousel no quede escondido bajo el menú fijo */
+            body {
+                padding-top: 3rem;
+            }
+
+            .social-card {
+                transition: transform 0.3s;
+                border: none;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            }
+            .social-card:hover {
+                transform: scale(1.03);
+            }
+            .social-img {
+                height: 200px;
+                object-fit: cover;
+            }
+            body {
+                background-color: #ffffff;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                color: #202122; /* Color de texto estilo Wikipedia */
+            }
+
+            .navbar {
+                margin-bottom: 40px;
+            }
+
+            /* Contenedor de Generación estilo Wikipedia */
+            .gen-section {
+                background: #fff;
+                border: 1px solid #a2a9b1; /* Borde sutil de Wiki */
+                padding: 25px;
+                margin-bottom: 40px;
+                border-radius: 2px;
+                transition: border-color 0.3s;
+            }
+
+            .gen-section:hover {
+                border-color: #3366cc; /* Azul de enlace */
+            }
+
+            .gen-title {
+                border-bottom: 1px solid #a2a9b1;
+                margin-bottom: 20px;
+                padding-bottom: 5px;
+                font-family: "Linux Libertine", "Georgia", "Times", serif;
+                font-weight: normal;
+            }
+
+            .gen-img {
+                width: 100%;
+                max-width: 450px;
+                height: auto;
+                border: 1px solid #c8ccd1;
+                padding: 3px;
+                background-color: #fff;
+            }
+
+            .gen-text {
+                line-height: 1.6;
+                font-size: 1.05rem;
+                text-align: justify;
+            }
+
+            .game-info {
+                background-color: #f8f9fa;
+                border: 1px solid #eaecf0;
+                padding: 10px 15px;
+                margin-bottom: 15px;
+                font-style: italic;
+            }
+
+            footer {
+                border-top: 1px solid #a2a9b1;
+                color: #54595d;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand pokemon-font" href="../index.html">Pokémon</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Contenido</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle text-white"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                >Videojuegos</a
+                            >
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="linea_principal.html">Línea Principal</a></li>
+                                <li><a class="dropdown-item" href="spin_offs.html">Spin-offs</a></li>
+                                <li><a class="dropdown-item" href="pokemon_go.html">Pokémon GO</a></li>
+                                <li><a class="dropdown-item" href="competitivo_vgc.html">Competitivo VGC</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle text-white"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                >Anime</a
+                            >
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="https://www.pokemon.com/el/dibujos-animados/horizontes/1"
+                                        target="_blank"
+                                        >Serie Horizontes</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="https://www.pokemon.com/es/episodios-pokemon/peliculas-pokemon/"
+                                        target="_blank"
+                                        >Películas</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="https://www.pokemon.com/el/dibujos-animados/temporadas"
+                                        target="_blank"
+                                        >Especiales Web</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../referencias.html">Referencias</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white" href="../contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <header class="mb-5">
+                <h1 class="display-5 fw-bold">Videojuegos: Línea Principal</h1>
+                <p class="lead text-muted">Cronología oficial de las regiones y generaciones del mundo Pokémon.</p>
+                <hr />
+            </header>
+
+            <section class="gen-section">
+                <div class="row align-items-start">
+                    <div class="col-lg-5 mb-3 mb-lg-0 text-center">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Gameboy.jpg/250px-Gameboy.jpg"
+                            class="gen-img shadow-sm"
+                            alt="Gen 1" />
+                    </div>
+                    <div class="col-lg-7">
+                        <h2 class="gen-title text-danger">1ª Generación: Región Kanto</h2>
+                        <div class="game-info">
+                            Pokémon Edición Roja, Azul y Amarilla (Game Boy).
+                        </div>
+                        <div class="gen-text">
+                            <p>
+                                La generación original, donde empezó todo, esta se corresponde con los videojuegos
+                                Pokemon Green (publicado solo en Japón) Pokémon Rojo, Pokémon Azul y Pokémon Amarillo
+                                para Game Boy puestos a la venta en 1996. Debido a que el nombre de estos juegos
+                                proviene de colores, también se les conoce como generación cromática.
+                            </p>
+                            <p>
+                                En Japón las ediciones comercializadas fueron en un principio la Roja y la Verde, con
+                                Charizard y Venusaur en la portada respectivamente. La Edición Azul (cuya mascota era
+                                Blastoise) fue una versión "especial" la cual contaba con mejoras como la reedición de
+                                los sprites de cada Pokémon. La Edición Amarilla (con Pikachu como la mascota) fue una
+                                versión especial de Pokémon Rojo y Pokémon Azul y se comercializó en todo el mundo. La
+                                premisa de esta edición fue asemejar los juegos al anime (empezar con Pikachu, capturar
+                                a Bulbasaur, Charmander y Squirtle, etc.). Los iniciales de la primera generación son:
+                                Bulbasaur, Charmander y Squirtle. Más tarde, el par de videojuegos original de esta
+                                generación tuvo una adaptación en la tercera generación, para Game Boy Advance y su
+                                reedición, Pokémon Amarillo, tuvo remake en la séptima generación, para Nintendo Switch.
+                            </p>
+                            <p>
+                                La acción se desarrolla en la zona geográfica ficticia de Kanto. El número de Pokémon de
+                                estas ediciones es 151. De todos modos, sobre el Pokémon número 151, Mew hay cierta
+                                controversia de que fuera posible conseguirlo en las ediciones originales de Game Boy de
+                                un modo convencional.
+                            </p>
+                            <p>
+                                Los videojuegos de la primera generación de Pokémon fueron un rotundo éxito que generó
+                                un "boom" mundial. Estos videojuegos acabaron cosechando más de 47 millones de copias
+                                vendidas, transformándose así en uno de los videojuegos más vendidos de la historia.
+                                Siendo actualmente el sexto videojuego más vendido de la historia. Los juegos entraron
+                                al Libro Guiness de los Récords Mundiales en la categoría de Mejor juego vendido de RPG
+                                para la Game Boy y Mejor juego vendido de género RPG de todos los tiempos en el año de
+                                2009.
+                            </p>
+                            <p>
+                                Siendo la primera generación, introduce elementos importantes a la franquicia como son
+                                los Pokémon iniciales, los Pokémon legendarios, el sistema clásico de los ocho
+                                gimnasios, el Alto Mando, el campeón y el equipo malvado que desea conquistar el mundo
+                                con la ayuda de los Pokémon.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gen-section">
+                <div class="row align-items-start">
+                    <div class="col-lg-5 mb-3 mb-lg-0 text-center">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Game_Boy_Color_%28green%29.png/250px-Game_Boy_Color_%28green%29.png"
+                            class="gen-img shadow-sm"
+                            alt="Gen 2" />
+                    </div>
+                    <div class="col-lg-7">
+                        <h2 class="gen-title text-primary">2ª Generación: Región Johto</h2>
+                        <div class="game-info">Oro, Plata y Cristal (Game Boy Color).</div>
+                        <div class="gen-text">
+                            <p>
+                                La aparición de los juegos Pokémon Oro y Plata para Game Boy Color en 2001, supuso el
+                                inicio de la segunda generación de juegos de Pokémon, también conocida como generación
+                                metálica. Esta familia de juegos Pokémon se vio completada con la aparición de Pokémon
+                                Cristal ese mismo año. Las principales novedades fueron la suma de cien nuevos Pokémon,
+                                llegando a 251, y la aparición de la nueva región de Johto. Sus iniciales son:
+                                Chikorita, Cyndaquil y Totodile. El par original de juegos de esta generación tuvo una
+                                adaptación más tarde, en cuarta generación, para Nintendo DS.
+                            </p>
+                            <p>
+                                Sus nuevas características fueron entre otras, la posibilidad de criar Pokémon a partir
+                                de huevos en la guardería y la aparición de las primeras pre-evoluciones (como Pichu,
+                                criado de un Pikachu hembra y un Pikachu macho); equipar a los Pokémon con objetos para
+                                recuperarse en combate, entre otras funciones; la atenuación del día y la noche, según
+                                la hora que fuese; la torre de batalla (añadida en Pokémon Cristal por primera vez); la
+                                recolecta de bayas; la separación entre Ataque Especial y Defensa Especial; la aparición
+                                de los tipos Acero y Siniestro; entre otras.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gen-section">
+                <div class="row align-items-start">
+                    <div class="col-lg-5 mb-3 mb-lg-0 text-center">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Nintendo-Game-Boy-Advance-Purple-FL.jpg/250px-Nintendo-Game-Boy-Advance-Purple-FL.jpg"
+                            class="gen-img shadow-sm"
+                            alt="Gen 3" />
+                    </div>
+                    <div class="col-lg-7">
+                        <h2 class="gen-title text-success">3ª Generación: Región Hoenn</h2>
+                        <div class="game-info">Rubí, Zafiro y Esmeralda (GBA).</div>
+                        <div class="gen-text">
+                            <p>
+                                También conocida como Generacion Advance. Se conforma de los juegos Pokémon Rubí y
+                                Zafiro; y Pokémon Esmeralda. Todos ellos para la consola Game Boy Advance y vendidos a
+                                partir del 2003. En esta generación se presentó con 135 nuevos Pokémon, desde el número
+                                251 hasta el número 386. Los sucesos de estos juegos ocurren en nueva región de Hoenn.
+                                En 2004 aparecen los remakes Pokémon Rojo Fuego y Pokémon Verde Hoja, que suceden
+                                nuevamente en Kanto, pero con características de la Generación Advance, además de ser
+                                compatibles con Rubí, Zafiro y Esmeralda. Sus características más destacables son la
+                                aparición de concursos Pokémon; de los combates dobles; de las naturalezas y las
+                                habilidades Pokémon. Sus iniciales son: Treecko, Torchic y Mudkip. El par de juegos
+                                original de esta generación, Rubí y Zafiro, tuvo su remake más tarde, en la sexta
+                                generación, para Nintendo 3DS.
+                            </p>
+                            <p>
+                                Debido a las características de la nueva consola, los Pokémon tienen un tamaño digital
+                                de 16 bits, el doble de lo existente anteriormente, por lo que resultan incompatibles
+                                con las previas generaciones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gen-section">
+                <div class="row align-items-start">
+                    <div class="col-lg-5 mb-3 mb-lg-0 text-center">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Nintendo_DS_Lite_Ice_Blue_01.jpg/250px-Nintendo_DS_Lite_Ice_Blue_01.jpg"
+                            class="gen-img shadow-sm"
+                            alt="Gen 4" />
+                    </div>
+                    <div class="col-lg-7">
+                        <h2 class="gen-title text-danger">4ª Generación: Región Sinnoh</h2>
+                        <div class="game-info">
+                            Pokémon Edición Perla y Diamante (Nintendo DS Lite).
+                        </div>
+                        <div class="gen-text">
+                            <p>
+                                Formada por los videojuegos Pokémon Diamante y Perla, lanzados en Japón el 28 de
+                                septiembre de 2006, su reedición, Pokémon Platino y la adaptación de los videojuegos de
+                                segunda generación, Pokémon Oro corazón y Plata alma, todos para consolas de la familia
+                                Nintendo DS. Esta generación incluye los Pokémon desde el 386 hasta el 493, siendo un
+                                total de 107 nuevos. La región que introdujo esta generación se llama Sinnoh. Los
+                                Pokemón iniciales son Turtwig, Chimchar y Piplup.
+                            </p>
+                            <p>
+                                Algunas novedades destacables de esta generación son: el poder utilizar la pantalla
+                                táctil de la Nintendo DS para manejar ciertas situaciones, el uso de la conexión Wi-Fi
+                                de Nintendo para intercambios o combates, el subsuelo de Sinnoh, la perspectiva aérea en
+                                3D, entre otras.
+                            </p>
+                            <p>
+                                Los videojuegos de cuarta generación tuvieron una gran repercusión por parte de la
+                                crítica y las ventas. Siendo Diamante y Perla uno de los videojuegos que más ventas ha
+                                cosechado de la saga, con casi 18 millones de copias vendidas en todo el mundo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gen-section">
+                <div class="row align-items-start">
+                    <div class="col-lg-5 mb-3 mb-lg-0 text-center">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Nintendo-DSi-Bl-Open.jpg/250px-Nintendo-DSi-Bl-Open.jpg"
+                            class="gen-img shadow-sm"
+                            alt="Gen 5" />
+                    </div>
+                    <div class="col-lg-7">
+                        <h2 class="gen-title text-danger">5ª Generación: Región Teselia/Unova</h2>
+                        <div class="game-info">
+                            Pokémon Edición Negro, Blanco, Negro 2 y Blanco 2 (Nintendo DSi).
+                        </div>
+                        <div class="gen-text">
+                            <p>
+                                La conforman los juegos Pokémon Negro, Blanco, Negro 2 y Blanco 2 para consolas de la
+                                familia Nintendo DS. Con algunas funcionalidades propias de DSi. El par de juegos
+                                originales fueron revelados oficialmente por la web oficial de Pokémon en Japón el 9 de
+                                abril de 2010. Sus fechas de salida fueron el 18 de septiembre de 2010 en Japón, 4 de
+                                marzo de 2011 en Europa, 6 de marzo de 2011 en Estados Unidos y América Latina. El par
+                                original contó con una secuela que salió a la venta el 23 de junio de 2012.
+                            </p>
+                            <p>
+                                Las ediciones Blanco y Negro contarían esta vez con algunas diferencias más de las que
+                                solía haber, no solamente Pokémon exclusivos. En esta entrega se añadieron 156 nuevos
+                                Pokémon, desde el número 494 (Victini) hasta el 649 (Genesect), haciendo un total de
+                                649, transformándose estos en los videojuegos que más criaturas nuevas han introducido
+                                hasta la fecha. El 10 de febrero de 2010 la revista CoroCoro lanzó una publicación en la
+                                cual muestra a un Pokémon llamado Zoroark y su preevolución llamada Zorua, los primeros
+                                mostrados en esta generación.
+                            </p>
+                            <p>
+                                La historia está basada en la región Teselia/Unova, con 3 nuevos iniciales: Snivy, Tepig
+                                y Oshawott, junto con las mascotas de ambas versiones del juego: Reshiram para Pokémon
+                                Negro y Zekrom para Pokémon Blanco.
+                            </p>
+                            <p>
+                                El 26 de febrero de 2012, en el programa japonés Pokemon Smash!, Junichi Masuda anuncia
+                                la producción de una secuela de Pokemon Blanco y Negro, llamada Pokemon Blanco 2 y
+                                Pokémon Negro 2 para consolas de la familia Nintendo DS, aunque también jugable para
+                                Nintendo 3DS, ya que esta consola portátil de Nintendo había salido a la venta en ese
+                                momento y esta cuenta con retrocompatibilidad con el catálogo de DS. En el año 2012
+                                salieron finalmente a la venta en Japón las ediciones: Pokémon edición Blanca 2 y
+                                Pokémon edición Negra 2. La historia se sitúa 2 años después del Blanco y Negro
+                                original. La mascota del juego es Kyurem Negro (Pokémon Negro 2) y Kyurem Blanco
+                                (Pokémon Blanco 2). La fecha de salida en Japón fue en junio de 2012 y en América y en
+                                Europa en otoño del 2012. El juego es válido para Nintendo DS y Nintendo 3DS (esta
+                                última sin aportar ningún efecto 3D).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gen-section">
+                <div class="row align-items-start">
+                    <div class="col-lg-5 mb-3 mb-lg-0 text-center">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Nintendo-3DS-AquaOpen.png/250px-Nintendo-3DS-AquaOpen.png"
+                            class="gen-img shadow-sm"
+                            alt="Gen 6" />
+                    </div>
+                    <div class="col-lg-7">
+                        <h2 class="gen-title text-danger">6ª Generación: Región Kalos</h2>
+                        <div class="game-info">Pokémon X y Y (Nintendo 3DS).</div>
+                        <div class="gen-text">
+                            <p>
+                                Pokémon X y Pokémon Y son dos videojuegos de Pokémon pertenecientes a la sexta
+                                generación. Fueron anunciados oficialmente en un Pokémon Direct en Japón el 8 de enero
+                                de 2013. Fue puesto a la venta mundialmente el día 12 de octubre en Europa, América y
+                                Japón. Esta generación también cuenta con los remakes de Pokémon Rubí y Zafiro: Pokémon
+                                Rubí Omega y Pokémon Zafiro Alfa, que salieron a la venta en noviembre del 2014.
+                            </p>
+                            <p>
+                                Esta generación fue dada a conocer por el presidente global de Nintendo, Satoru Iwata,
+                                en una conferencia en línea mundial y habla de un nuevo juego para la consola Nintendo
+                                3DS y Nintendo 3DS XL, el nombre de la versión se dio a conocer como "X" e "Y".[3] Los
+                                iniciales son Chespin, Fennekin y Froakie. Esta generación añadió 72 Pokémon y las
+                                megaevoluciones de Pokémon de entregas anteriores. Hasta el momento se conocen 48
+                                megaevoluciones diferentes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gen-section">
+                <div class="row align-items-start">
+                    <div class="col-lg-5 mb-3 mb-lg-0 text-center">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/New_Nintendo_3DS_%28wei%C3%9F%29_20250129_HOF2650_RAW-Export.png/250px-New_Nintendo_3DS_%28wei%C3%9F%29_20250129_HOF2650_RAW-Export.png"
+                            class="gen-img shadow-sm"
+                            alt="Gen 7" />
+                    </div>
+                    <div class="col-lg-7">
+                        <h2 class="gen-title text-danger">7ª Generación: Región Alola</h2>
+                        <div class="game-info">
+                            Pokémon Sol, Luna, UltraSol y UltraLuna (New Nintendo 3DS).
+                        </div>
+                        <div class="gen-text">
+                            <p>
+                                La séptima generación de Pokémon comenzó con los videojuegos Pokémon Sol y Pokémon Luna,
+                                que fueron lanzados para las videoconsolas de la familia Nintendo 3DS y que salieron al
+                                mercado el 18 de noviembre del 2016 en Japón, América y Australia; más tarde, el 23 de
+                                noviembre del mismo año, salieron en Europa. Los juegos introdujeron nuevas especies de
+                                Pokémon, esta vez de la región de Alola, por lo que comenzaba una nueva generación. Se
+                                trató del par de videojuegos original que más novedades y cambios presentó para la
+                                franquicia hasta el momento, dejando atrás muchas tradiciones (como los gimnasios,
+                                medallas o el sistema de MO), dando el salto a proporciones más realistas y finalmente
+                                abandonando la clásica cuadrícula del mapeado.
+                            </p>
+                            <p>
+                                En esta generación se introdujeron nuevas funciones como la RotomDex, las Pokémonturas
+                                (sustituyendo las clásicas M") o los Movimientos Z, entre otros. Además, en esta
+                                generación de Pokémon, se da un cambio radical a la temática del juego, dejando de lado
+                                los gimnasios Pokémon y centrándose ahora en lo que se hace llamar recorrido insular,
+                                una serie de pruebas típicas de la región de Alola. Las medallas de gimnasios son
+                                sustituidas por los cristales Z, que a diferencia de las medallas, estos tienen una
+                                función jugable. Hay 18 cristales Z en todo el juego, un cristal por cada tipo, y con
+                                ellos se pueden realizar, una vez por combate, un ataque más potente. También son
+                                introducidas las formas regionales por primera vez en la franquicia, que se tratan de
+                                Pokémon con una forma distinta a la normal, para así, adaptarse al clima de la región,
+                                en este caso, Alola, por lo que son llamadas "Formas Alola". Los Pokémon iniciales de la
+                                séptima generación son Rowlet, Litten y Popplio.
+                            </p>
+                            <p>
+                                Los juegos Pokémon Sol y Luna salieron a la venta pocos meses después del "boom"
+                                mediático de la exitosa aplicación para móviles, Pokémon GO, lo que hizo que estas
+                                ediciones fuesen un éxito mundial vendiendo más de 16 millones de copias en su primer
+                                año, transformándose en los segundos juegos más vendidos de la consola Nintendo 3DS en
+                                menos de un año y en uno de los que más rápido han vendido de la franquicia.Además, los
+                                juegos recibieron grandes críticas por parte de la prensa, que llegaron a mencionarlo
+                                como el mejor juego de la saga en varias ocasiones
+                            </p>
+                            <p>
+                                Durante una transmisión Pokémon Direct del 6 de junio de 2017, dos nuevos videojuegos de
+                                la serie fueron revelados: Pokémon Ultrasol y Ultraluna los cuales fueron lanzados el 17
+                                de noviembre de 2017. Estos son ediciones superiores de los juegos originales (del
+                                estilo de Pokémon Esmeralda o Pokémon Platino en el pasado), una reedición que ofrece
+                                una historia alternativa a la de Pokémon Sol y Luna y se centran nuevamente en la región
+                                de Alola, añadiendo nuevos Pokémon, contenido y características. Esta fue la primera vez
+                                que unos juegos de mitad de generación introdujeron nuevos Pokémon, antes de estos, solo
+                                el par inicial introducía nuevas criaturas.
+                            </p>
+                            <p>
+                                El 29 de mayo de 2018 Pokémon Let's Go, Pikachu! y Let's Go, Eevee! fueron anunciados
+                                para Nintendo Switch, los primeros juegos de la saga principal para esta consola. Son
+                                remakes de Pokémon Amarillo con nuevos elementos como integración con Pokémon GO. Fueron
+                                lanzados el 16 de noviembre de 2018. Este fue el último juego de la línea principal que
+                                formó parte de la séptima generación, e incluyó dos nuevos Pokémon. Por lo que,
+                                finalmente, la generación incluyó 18 formas regionales y 88 nuevos Pokémon.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gen-section">
+                <div class="row align-items-start">
+                    <div class="col-lg-5 mb-3 mb-lg-0 text-center">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Nintendo-Switch-wJoyCons-BlRd-Standing-FL.jpg/250px-Nintendo-Switch-wJoyCons-BlRd-Standing-FL.jpg"
+                            class="gen-img shadow-sm"
+                            alt="Gen 8" />
+                    </div>
+                    <div class="col-lg-7">
+                        <h2 class="gen-title text-danger">8ª Generación: Región Galar, Kanto y Sinnoh</h2>
+                        <div class="game-info">
+                            Pokémon Edición Espada, Escudo, Let´s Go Eevee, Let´s Go Pikachu,
+                            Diamante Reluciente y Perla Brillante (Nintendo Switch / NS Oled / NS 2).
+                        </div>
+                        <div class="gen-text">
+                            <p>
+                                Durante el E3 2017, Nintendo confirmó que un nuevo juego de Pokémon estaba en desarrollo
+                                para Nintendo Switch. En un comienzo se pensó que sería el inicio de una nueva
+                                generación, pero finalmente los primeros juegos para esta consola fueron Pokémon Let's
+                                Go, Pikachu! y Let's Go, Eevee!, pertenecientes a la séptima generación.A pesar de esto,
+                                posteriormente, en una conferencia de prensa en Tokio, Japón, el 29 de mayo de 2018, The
+                                Pokémon Company confirmó que no solo esos juegos estaban siendo desarrollados para la
+                                consola, otro juego se encontraba en desarrollo actualmente y este sí se trataba de la
+                                primera entrega de la octava generación de la franquicia, que vería la luz en 2019.
+                            </p>
+                            <p>
+                                El 27 de febrero de 2019, se dieron a conocer los nuevos títulos para Nintendo Switch
+                                llamados Pokémon espada y Pokémon escudo. Estos videojuegos se lanzaron el 15 de
+                                noviembre de 2019 en todo el mundo.Con estos comenzó la octava generación. En 2020 estos
+                                videojuegos recibieron una expansión con dos contenidos descargables de forma digital:
+                                La isla de la armadura que salió el 17 de junio de 2020, y Las nieves de la corona que
+                                estuvo disponible el 23 de octubre de 2020. El 6 de noviembre de 2020 salió a la venta
+                                una reedición de los juegos en tiendas que incluía todo este contenido, pero ahora en
+                                formato físico. Los juegos incluyeron novedades como eliminar los encuentros aleatorios
+                                y mostrar a los Pokémon caminando por el mundo por primera vez o la inclusión de una
+                                pequeña zona de mundo abierto con cámara libre llamada "Área silvestre".
+                            </p>
+                            <p>
+                                Aunque la recepción crítica de estos videojuegos estuvo envuelta en una gran polémica,
+                                la recepción comercial fue un auténtico éxito, con más de 20 millones de copias vendidas
+                                actualmente, siendo el tercer juego más vendido de la saga por ahora.
+                            </p>
+                            <p>
+                                El 26 de febrero de 2021 se anunció en un Pokémon Presents especial para celebrar el 25
+                                aniversario de la franquicia, que unos remakes de los videojuegos Pokémon Diamante y
+                                Perla están en desarrollo y saldrán a la venta a finales de año bajo el nombre de
+                                Pokémon Diamante Brillante y Pokémon Perla Reluciente. Los juegos volverán a la estética
+                                clásica de cuadrícula que la saga mantuvo hasta la sexta generación, esta vez con un
+                                estilo chibi, en miniatura, manteniéndose lo más fieles posible a los juegos originales,
+                                incluso volviendo a incluir los encuentros aleatorios. Estos remakes, serán los primeros
+                                juegos de la saga principal de Pokémon que no son desarrollados por Game Freak, ya que
+                                están siendo desarrollados por ILCA y publicados por The Pokémon Company.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gen-section">
+                <div class="row align-items-start">
+                    <div class="col-lg-5 mb-3 mb-lg-0 text-center">
+                        <img
+                            src="data:image/jpeg;base64,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"
+                            class="gen-img shadow-sm"
+                            alt="Gen 9" />
+                    </div>
+                    <div class="col-lg-7">
+                        <h2 class="gen-title text-danger">9ª Generación: Región Paldea</h2>
+                        <div class="game-info">
+                            Pokémon Edición Escaralata y Purpura (Nintendo Switch / NS Oled /
+                            NS 2).
+                        </div>
+                        <div class="gen-text">
+                            <p>
+                                El 27 de febrero de 2022, en el Pokémon Presents fueron anunciados Pokémon Escarlata y
+                                Pokémon Púrpura para Nintendo Switch, y fueron lanzados el 18 de noviembre de 2022. El
+                                27 de febrero de 2023, se anunció un paquete de expansión de dos partes titulado El
+                                Tesoro Oculto del Área Cero. La primera parte, La Máscara Turquesa, fue lanzada el 13 de
+                                septiembre de 2023. La segunda parte, El Disco Índigo, fue lanzada el 14 de diciembre de
+                                2023.El epílogo, Mochisteria, fue lanzado el 11 de enero de 2024.
+                            </p>
+                            <p>
+                                Esta generación introdujo un total de 120 nuevos pokémon, 103 revelados en Pokemon
+                                Scarlet y Violet, 2 revelados en Teraincursiones especiales, 7 revelados en La Máscara
+                                Turquesa, 7 revelados en El Disco Índigo y 1 revelado en Mochisteria, haciendo un total
+                                general de 1025 Pokémon.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gen-section">
+                <div class="row align-items-start">
+                    <div class="col-lg-5 mb-3 mb-lg-0 text-center">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Nintendo_Switch_2_in_Handheld_Mode.jpg/500px-Nintendo_Switch_2_in_Handheld_Mode.jpg"
+                            class="gen-img shadow-sm"
+                            alt="Gen 10" />
+                    </div>
+                    <div class="col-lg-7">
+                        <h2 class="gen-title text-danger">10ª Generación: Región Desconocida</h2>
+                        <div class="game-info">
+                            Pokémon Edición Olas y Aire(Nintendo Switch 2).
+                        </div>
+                        <div class="gen-text">
+                            <p>
+                                El 27 de febrero de 2026, durante el evento especial por el 30.º aniversario de Pokemon,
+                                dentro del anual Pokemon Presents, se presentó los nuevos juegos Pokémon Winds y Pokémon
+                                Waves desarrollados para Nintendo Switch 2 y con fecha sin confirmar para 2027.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="text-center py-5 mt-5 bg-light">
+            <div class="container">
+                <p>&copy; 2026 Proyecto Centro Pokémon - Universidad Politécnica SLP</p>
+                <p class="small text-muted">Contenido en base a &copy;ThePokemonCompany.</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
