@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="es" data-bs-theme="auto">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contenido Pokémon</title>
+
+    <link href="../bootstrap-5.3.8-examples/assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="carousel.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+
+    <style>
+        .pokemon-font {
+            font-family: 'Pokemon Solid', sans-serif;
+            color: #ffcb05;
+            text-shadow: -2px -2px 0 #3b4cca, 2px -2px 0 #3b4cca, -2px 2px 0 #3b4cca, 2px 2px 0 #3b4cca;
+            letter-spacing: 2px;
+        }
+        .custom-navbar {
+            background-color: #b31d1d !important;
+            border-bottom: 3px solid #ffcb05;
+        }
+        /* Ajuste para que el carousel no quede escondido bajo el menú fijo */
+        body { padding-top: 3rem; }
+        
+        .social-card {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .social-card:hover { transform: scale(1.03); }
+        .social-img { height: 200px; object-fit: cover; }
+    </style>
+</head>
+<body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand pokemon-font" href="../index.html">Pokémon</a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Contenido</a></li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Videojuegos</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="linea_principal.html">Línea Principal</a></li>
+                  <li><a class="dropdown-item" href="spin_offs.html">Spin-offs</a></li>
+                  <li><a class="dropdown-item" href="pokemon_go.html">Pokémon GO</a></li>
+                  <li><a class="dropdown-item" href="competitivo_vgc.html">Competitivo VGC</a></li>
+                </ul>
+              </li>
+
+        <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Anime</a>
+    <ul class="dropdown-menu">
+        <li>
+            <a class="dropdown-item" href="https://www.pokemon.com/el/dibujos-animados/horizontes/1" target="_blank">Serie Horizontes</a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://www.pokemon.com/es/episodios-pokemon/peliculas-pokemon/" target="_blank">Películas</a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://www.pokemon.com/el/dibujos-animados/temporadas" target="_blank">Especiales Web</a>
+        </li>
+    </ul>
+</li>
+
+              <li class="nav-item"><a class="nav-link text-white" href="../referencias.html">Referencias</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="../contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+<div class="carousel-item active">
+  <img src="../IMG/PokeAnime.gif" class="d-block w-100" style="height: 32rem; object-fit: cover; filter: brightness(0.6);" alt="Anime">
+  <div class="container">
+    <div class="carousel-caption text-start">
+      <h1 class="pokemon-font">Anime</h1>
+      <p>Donde comenzó el viaje de Ash...</p>
+      <p>
+        <a class="btn btn-lg btn-primary" href="https://www.pokemon.com/es/episodios-pokemon/" target="_blank">
+          Ver episodios
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+          <div class="carousel-item">
+            <img src="../IMG/PokePrincipal.gif" class="d-block w-100" style="height: 32rem; object-fit: cover; filter: brightness(0.6);" alt="Juegos">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1 class="pokemon-font">Juegos Principales</h1>
+                <p>Domina los combates y conviértete en el Campeón.</p>
+                <p><a class="btn btn-lg btn-primary" href="linea_principal.html">Conoce los juegos</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../IMG/Spinoff.gif" class="d-block w-100" style="height: 32rem; object-fit: cover; filter: brightness(0.6);" alt="Spin Off">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1 class="pokemon-font">Spin Off</h1>
+                <p>Si buscas más aventuras Pokémon revisa aquí.</p>
+                <p><a class="btn btn-lg btn-warning" href="spin_offs.html">Explora más</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <div class="container marketing">
+        <div class="row text-center mt-5">
+          <div class="col-lg-4">
+            <img src="../IMG/IconoAnime.jpg" class="rounded-circle" width="140" height="140" alt="Anime">
+            <h2 class="fw-normal">Anime</h2>
+            <p>Aventuras con Ash y sus amigos.</p>
+            <p><a class="btn btn-secondary" href="#">Ver más</a></p>
+          </div>
+          <div class="col-lg-4">
+            <img src="../IMG/IconoPrincipales.jpg" class="rounded-circle" width="140" height="140" alt="Juegos">
+            <h2 class="fw-normal">Juegos</h2>
+            <p>Más de 1000 Pokémon para descubrir.</p>
+            <p><a class="btn btn-secondary" href="#">Lánzate</a></p>
+          </div>
+          <div class="col-lg-4">
+            <img src="../IMG/IconoSpinoff.jpg" class="rounded-circle" width="140" height="140" alt="Spinoff">
+            <h2 class="fw-normal">Spin offs</h2>
+            <p>Nuevas formas de jugar.</p>
+            <p><a class="btn btn-secondary" href="#">Descubre</a></p>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+<div class="row">
+    <div class="col-12">
+        <h2 class="pokemon-font text-center mb-5" style="color: #3b4cca; text-shadow: none;">Últimas Novedades</h2>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+        <div class="card social-card h-100">
+            <a href="https://legends.pokemon.com/es-es/" target="_blank" style="text-decoration: none; color: inherit;">
+                <img src="https://legends.pokemon.com/static-assets/content/images/t/mega_dimension_kv_thumbnail_v2-1192w.jpg" class="card-img-top social-img" alt="Legends ZA">
+                <div class="card-body">
+                    <h5 class="card-title text-primary"><i class="fa fa-gamepad"></i> Proyecto Z-A</h5>
+                    <p class="card-text small">La reconstrucción de Ciudad Luminalia ha comenzado. Haz clic para ver el tráiler oficial y detalles de la Megaevolución.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card social-card h-100">
+            <a href="https://pokemongolive.com/es/" target="_blank" style="text-decoration: none; color: inherit;">
+                <img src="https://lh3.googleusercontent.com/JqrZDO-A8YDndFtcpw7VIF6DucQ3xIsLtV_7menSOFJBin9Ons0QmdRA5KSN3yJ9Mi3ugksiOmrGgnIAcnIUF4XbCPhTW3QrSg=e365-pa-nu-w1950" class="card-img-top social-img" alt="Pokemon GO">
+                <div class="card-body">
+                    <h5 class="card-title text-info"><i class="fa fa-map-marker"></i> Evento Mundial</h5>
+                    <p class="card-text small">¡Los Ultraentes invaden las incursiones! Consulta el calendario de eventos y bonus de la temporada actual aquí.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card social-card h-100">
+            <a href="https://tcgpocket.pokemon.com/es-es/" target="_blank" style="text-decoration: none; color: inherit;">
+                <img src="https://tcg.pokemon.com/assets/img/news/items/es-es/pokemon-tcg-169-es.png" class="card-img-top social-img" alt="TCG Pocket">
+                <div class="card-body">
+                    <h5 class="card-title text-danger"><i class="fa fa-clone"></i> TCG Pocket</h5>
+                    <p class="card-text small">¡La nueva experiencia digital ya está disponible! Colecciona cartas con efectos 3D abriendo dos sobres gratis al día.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+        <footer class="container py-5 mt-5 border-top">
+          <p class="float-end"><a href="#" class="btn btn-sm btn-outline-danger">Volver arriba</a></p>
+          <p>&copy; 2026 Proyecto Pokémon &middot;</p>
+        </footer>
+      </div>
+    </main>
+
+    <script src="../bootstrap-5.3.8-examples/assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
